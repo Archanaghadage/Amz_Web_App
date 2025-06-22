@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Base Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav#header {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+nav#header a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav#header a:hover {
+    color: #ff6f61;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Container */
+.container {
+    padding: 2rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Product Card */
+.product-item, .product-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img, .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-desc {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.product-price {
+    color: #ff6f61;
+    font-weight: bold;
+    margin: 0.8rem 0;
+}
+
+/* Button Styles */
+.add-btn,
+.btn,
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.add-btn:hover,
+.btn:hover,
+input[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+/* Form Containers */
+.login-container,
+.register-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2,
+.register-container h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-container form input,
+.register-container form input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Footer Links in Form */
+.footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Cart and Order List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+}
